@@ -1,35 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+
 @import "tailwindcss";
 
-html,
-body {
-    height: 100%;
+@theme {
+    --font-bigShouldersDisplay: 'Big Shoulders Display';
 }
 
-body {
-    margin: 0;
-    display: flex;
-    place-items: center;
-    min-width: 320px;
-    min-height: 100vh;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
-}
+@layer base {
+    html,
+    body {
+        height: 100%;
+    }
 
-#root {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
-}
+    body {
+        margin: 0;
+        display: flex;
+        place-items: center;
+        min-width: 320px;
+        min-height: 100vh;
+        color: rgba(255, 255, 255, 0.87);
+        background-color: #050D2F;
+        box-shadow: inset 0 0 50px #445dcc;
+    }
 
-h1 {
-    font-size: 3.2em;
-    line-height: 1.1;
-}
- 
-code {
-    @apply bg-slate-900 p-1 rounded;
+    #root {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Big Shoulders Display', sans-serif;
+    }
 }
