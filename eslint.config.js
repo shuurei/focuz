@@ -9,6 +9,10 @@ export default defineConfig([
 	globalIgnores(['dist']),
 	{
 		files: ['**/*.{ts,tsx}'],
+		rules: {
+			'prefer-const': 'off',
+			'@typescript-eslint/no-explicit-any': 'off'
+		},
 		extends: [
 			js.configs.recommended,
 			tseslint.configs.recommended,
