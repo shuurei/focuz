@@ -1,12 +1,13 @@
 import { useCounterStore } from '../stores/useCounterStore'
+import Button from '@/components/ui/button'
 
 export default function IncrementCounterButton() {
     const increment = useCounterStore((s) => s.increment);
 
     return (
-        <button
-            className='px-4 py-2 bg-zinc-900 text-white rounded-lg hover:bg-zinc-800 transition'
+        <Button
+            variant='green'
             onClick={increment}
-        >+</button>
+        >Increment</Button>
     );
 }
