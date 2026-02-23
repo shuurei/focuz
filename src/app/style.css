@@ -7,30 +7,22 @@
 }
 
 @layer base {
-    html,
-    body {
-        height: 100%;
+    * {
+        scrollbar-width: none
     }
 
-    body {
-        margin: 0;
-        display: flex;
-        place-items: center;
-        min-width: 320px;
-        min-height: 100vh;
+    html,
+    body,
+    #root {
+        width: 100%;
+        min-height: 100dvh;
         color: rgba(255, 255, 255, 0.87);
         background-color: #050D2F;
         box-shadow: inset 0 0 50px #445dcc;
     }
 
     #root {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        max-width: 1280px;
-        margin: 0 auto;
-        padding: 2rem;
-        text-align: center;
+        padding: 20px;
     }
 
     h1,
@@ -40,5 +32,9 @@
     h5,
     h6 {
         font-family: 'Big Shoulders Display', sans-serif;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
     }
 }

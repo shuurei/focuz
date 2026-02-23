@@ -2,9 +2,8 @@ import { Outlet } from 'react-router-dom'
 
 export default function Layout() {
     return (
-        <>
-            <h1 className='text-6xl'>Focuz</h1>
+        <div className='flex items-center justify-center h-full'>
             <Outlet />
-        </>
+        </div>
     );
 }
