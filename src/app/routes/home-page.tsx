@@ -1,4 +1,4 @@
-import { Edit, Eye, Trash } from 'lucide-react'
+import { Edit, Trash } from 'lucide-react'
 
 import Button from '@/components/ui/button'
 import Checkbox from '@/components/ui/checkbox'
